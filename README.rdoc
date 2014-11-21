@@ -1,28 +1,25 @@
-== README
+Overview
+determine dateability of candidate based on their voting record
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+as a user...
+i want to hear a ten second snippet of a song
+i want to either like or dislike the song
+i want to have another song play after voting on a previous snippet
+i want to see the songs I have liked
+i want to see the genres of a particular song
+i want to create a playlist
 
-Things you may want to cover:
+as an admin
+I want to see the most liked genre for a user
+I want to see the least liked genre for a user
+I want to determine a 'date' for a user depending on the number of songs liked
+I want to see the number of users that liked more than 60% of the sample sounds
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Components
+soundcloud api
+rails
+john - backbone implementation
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+API
+
