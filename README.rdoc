@@ -6,7 +6,7 @@ i want to hear a ten second snippet of a song
 i want to either like or dislike the song
 i want to have another song play after voting on a previous snippet
 i want to see the songs I have liked
-i want to see the genres of a particular song
+i want to see c the genres of a particular song
 i want to create a playlist
 
 as an admin
@@ -22,4 +22,49 @@ john - backbone implementation
 
 
 API
+
+Models
+
+User # has many choices
+name
+email
+
+Playlist # belongs to :user
+user_id
+songs = [1,2,3,4,5]
+
+Song # has many genres through GenreSongs
+user_id
+choice_id
+track_name
+artist
+
+Genre # has many songs through GenreSongs
+actual genre/name
+
+GenreSongs
+song_id
+genre_id
+
+Choice # belong to user
+user_id
+song_id
+liked
+
+Controllers
+API end-points
+
+User
+new, edit, show_own_profile, create_playlist
+
+Song
+get_playlist - for a particular user on soundcloud
+get_song
+
+Choices
+like_song
+dislike_song
+
+Community
+show_matches
 
